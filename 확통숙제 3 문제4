@@ -1,0 +1,12 @@
+import math
+
+p=0.03
+
+x=0
+
+t=3
+
+n=31
+for i in range(0,t+1):
+    x+=math.comb(n,i)*p**i*(1-p)**(n-i)
+print(1-x)
